@@ -1,15 +1,21 @@
 import { DateTimeResolver, URLResolver } from "graphql-scalars";
-import { chats } from "../fixtures/db";
+import { chats, messages } from "../fixtures/db";
 
 const resolvers = {
   Date: DateTimeResolver,
   URL: URLResolver,
 
+  Chat: {
+    lastMessage(chat: any) {
+      return messages.find((m) => m.id === chat.lastMessage);
+    },
+  },
+
   Query: {
     chats() {
       return chats;
-    }
-  }
+    },
+  },
 };
 
 export default resolvers;

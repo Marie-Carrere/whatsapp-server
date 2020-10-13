@@ -15,5 +15,5 @@ type Chat {
 }
 
 type Query {
-  chats: [chat!]!
+  chats: [Chat!]!
 }
