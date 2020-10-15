@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Query.chats should fetch all chats 1`] = `
+Object {
+  "chats": Array [
+    Object {
+      "id": "1",
+      "lastMessage": null,
+      "name": "Wyatt Craig",
+      "picture": "https://randomuser.me/api/portraits/men/7.jpg",
+    },
+    Object {
+      "id": "2",
+      "lastMessage": null,
+      "name": "Darryl Nelson",
+      "picture": "https://randomuser.me/api/portraits/men/86.jpg",
+    },
+    Object {
+      "id": "3",
+      "lastMessage": null,
+      "name": "Tamara Foster",
+      "picture": "https://randomuser.me/api/portraits/women/36.jpg",
+    },
+    Object {
+      "id": "4",
+      "lastMessage": null,
+      "name": "Sofia Klark",
+      "picture": "https://randomuser.me/api/portraits/women/2.jpg",
+    },
+  ],
+}
+`;
